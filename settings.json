@@ -1,0 +1,176 @@
+{
+    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+    // 编辑器写代码优化配置
+    "files.autoSave": "onFocusChange",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.fontSize": 20,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.renderIndentGuides": false,
+    // 显示tab
+    "editor.renderControlCharacters": true,
+    // 显示空格
+    "editor.renderWhitespace": "all",
+    // 美化vscode vscode图标
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.activityBar.visible": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorCustomizations": {
+        // 配置光标所在行的背景色
+        "editor.lineHighlightBackground": "#243535",
+        // 光标所在行的边框
+        "editor.lineHighlightBorder": "#242121",
+        // 光标颜色
+        "editorCursor.foreground": "#b6b6b6",
+    },
+    "search.showLineNumbers": true,
+    "editor.mouseWheelZoom": true,
+    "editor.wordWrap": "on",
+    // 文件保存的时候要执行的操作
+    "editor.codeActionsOnSave": {
+        // 格式化markdown
+        "source.fixAll.markdownlint": true,
+    },
+    // VScode 文件搜索区域配置
+    "search.exclude": {
+        "**/dist": true,
+        "**/build": true,
+        "**/elehukouben": true,
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/.svn": true,
+        "**/.DS_Store": true,
+        "**/.idea": true,
+        "**/.vscode": false,
+        "**/yarn.lock": true,
+        "**/tmp": true
+    },
+    // 排除文件搜索区域，比如node_modules(贴心的默认设置已经屏蔽了)
+    "files.exclude": {
+        "**/.idea": true,
+        "**/yarn.lock": true,
+        "**/tmp": true,
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/.svn": true,
+        "**/.DS_Store": true,
+        "**/.vscode": false,
+        "**/dist": true,
+        "**/build": true,
+        "**/.deploy_git": true,
+    },
+    // 配置文件关联
+    // 比如小程序中的 .wxss 这种文件，会把它作为css文件来处理，提供对应的css的语法提示，css的格式化等等。
+    "files.associations": {
+        "*.wxss": "css",
+        "*.cjson": "jsonc",
+        "*.wxs": "javascript",
+        "*.ts": "typescript",
+        "*.vue": "vue",
+        "*.dart": "dart"
+    },
+    // go语言辅助
+    "go.formatTool": "gofmt",
+    "go.useCodeSnippetsOnFunctionSuggest": true,
+    "go.autocompleteUnimportedPackages": true,
+    "go.useLanguageServer": true,
+    "code-runner.fileDirectoryAsCwd": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.respectShebang": false,
+    "code-runner.executorMap": {
+        "python": "python",
+    },
+    "terminal.integrated.cwd": "${fileDirname}",
+    // 控制终端输出的行数
+    "terminal.integrated.scrollback": 1000,
+    "terminal.integrated.fontSize": 18,
+    // python辅助
+    "python.autoComplete.addBrackets": true,
+    "python.linting.flake8Enabled": true,
+    "python.terminal.executeInFileDir": true,
+    "python.terminal.activateEnvironment": false,
+    "python.formatting.provider": "autopep8",
+    // vue辅助
+    // 每次保存的时候将代码按eslint格式进行修复
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "vue"
+    ],
+    "vsicons.projectDetection.autoReload": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "eslint.options": {
+        "plugins": [
+            "html"
+        ]
+    },
+    // 配置shell格式化
+    // 安装方式：go get mvdan.cc/sh/v3/cmd/shfmt
+    "shellformat.path": "/home/felix/go/bin/shfmt",
+    "codemetrics.basics.ComplexityLevelExtremeDescription": "代码需要优化",
+    "codemetrics.nodeconfiguration.AnyKeyword": 150,
+    "codemetrics.nodeconfiguration.AnyKeywordDescription": "尽量控制在150个字符内",
+    "codemetrics.basics.ComplexityLevelHighDescription": "代码质量不错",
+    "codemetrics.basics.ComplexityLevelLow": 1,
+    "codemetrics.basics.ComplexityLevelLowDescription": "代码已优化",
+    "codemetrics.basics.DiagnosticsEnabled": true,
+    "codemetrics.basics.ComplexityLevelNormalDescription": "代码达标",
+    "codemetrics.nodeconfiguration.CallExpressionDescription": "Cakoexpression",
+    "codemetrics.nodeconfiguration.BreakStatementDescription": "Break atement",
+    "codemetrics.nodeconfiguration.CaseClauseDescription": "Case 语句",
+    "codemetrics.nodeconfiguration.JsxSelfClosingElementDescription": "Jsx元素闭合",
+    "codemetrics.nodeconfiguration.JsxElementDescription": "这是Jsx元素",
+    "codemetrics.nodeconfiguration.LabeledStatementDescription": "标记语句",
+    "codemetrics.nodeconfiguration.MethodDeclarationDescription": "方法声明",
+    "codemetrics.nodeconfiguration.MethodSignatureDescription": "Method Signature",
+    "codemetrics.nodeconfiguration.NamedImports": 1,
+    "codemetrics.nodeconfiguration.ModuleDeclaration": 1,
+    "codemetrics.nodeconfiguration.ModuleDeclarationDescription": "模块声明",
+    "codemetrics.nodeconfiguration.NamedImportsDescription": "命名导入",
+    "codemetrics.nodeconfiguration.NamespaceImport": 1,
+    "codemetrics.nodeconfiguration.NamespaceImportDescription": "命名空间导入",
+    "codemetrics.nodeconfiguration.SwitchStatementDescription": "Switch 语句",
+    "codemetrics.nodeconfiguration.ThrowStatementDescription": "Throw语句",
+    "codemetrics.nodeconfiguration.TryStatementDescription": "Try catch语句",
+    "codemetrics.nodeconfiguration.VariableStatementDescription": "变量声明",
+    "codemetrics.nodeconfiguration.VariableStatement": 1,
+    "codemetrics.nodeconfiguration.ClassDeclarationDescription": "类声明",
+    "codemetrics.nodeconfiguration.ClassDeclaration": 1,
+    "codemetrics.nodeconfiguration.ReturnStatementDescription": "返回语句",
+    "codemetrics.nodeconfiguration.IfStatementDescription": "if 语句",
+    "codemetrics.nodeconfiguration.ArrowFunctionDescription": "箭头函数",
+    "codemetrics.nodeconfiguration.ConditionalExpressionDescription": "三目运算语句",
+    "codemetrics.nodeconfiguration.CatchClauseDescription": "Catch Case语句",
+    "codemetrics.nodeconfiguration.ConstructorDescription": "构造函数",
+    "codemetrics.basics.ComplexityLevelNormal": 3,
+    "codemetrics.basics.ComplexityTemplate": "圈复杂度为 {0}，{1}",
+    "codemetrics.basics.ComplexityColorExtreme": "#ff0000",
+    "codemetrics.basics.ComplexityColorHigh": "#e6a23c",
+    "codemetrics.basics.ComplexityColorNormal": "#4bb14f",
+    "todo-tree.tree.showScanModeButton": false,
+    "editor.rulers": [],
+    "editor.tokenColorCustomizations": null,
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+    "terminal.integrated.inheritEnv": false,
+    "python.analysis.completeFunctionParens": true,
+    // "editor.suggestSelection": "first",
+    // "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    // "python.languageServer": "Microsoft",
+    // 看板配置
+    "kanban": {
+        "openOnStartup": true,
+        "trackTime": true
+    },
+    "C_Cpp.updateChannel": "Insiders",
+    "python.pythonPath": "python3"
+}
